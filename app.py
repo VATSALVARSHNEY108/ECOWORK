@@ -11,7 +11,7 @@ from utils.database import init_database
 
 
 def main():
-    st.header("वत्सल वार्ष्णेय")
+    st.header("हाँ इस वत्सल वार्ष्णेय ने इसे बनाया है")
 
     st.set_page_config(
         page_title="Waste Management System",
@@ -140,4 +140,5 @@ def show_dashboard():
 
 if __name__ == "__main__":
     main()
+
 
