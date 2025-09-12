@@ -1,0 +1,33 @@
+[
+  {
+    "family_name": "Test Family",
+    "head_of_family": "Vatsal VArshney",
+    "contact_number": "9876543210",
+    "email": "",
+    "address": "house number 4 , State Bank Colony Hathras",
+    "family_size":5,
+    "training_preference": "Workshop (Community Center)",
+    "preferred_date": "2025-09-19",
+    "status": "completed",
+    "notes": "",
+    "registration_date": "2025-09-12T18:54:44.434552",
+    "id": 1,
+    "created_at": "2025-09-12T18:54:44.434575",
+    "updated_at": "2025-09-12T18:57:32.841136"
+  },
+  {
+    "family_name": "parliament",
+    "head_of_family": "mota bhai",
+    "contact_number": "$$$$$$$$",
+    "email": "motabhai$$$@motabhai.com",
+    "address": "antilia naam toh suna hoga",
+    "family_size": 4,
+    "training_preference": "Workshop (Community Center)",
+    "preferred_date": "None",
+    "status": "pending",
+    "notes": "None",
+    "registration_date": "2025-09-12T19:17:29.319346",
+    "id": 2,
+    "created_at": "2025-09-12T19:17:29.319386"
+  }
+]
