@@ -3,7 +3,7 @@ import pandas as pd
 from datetime import datetime
 import os
 
-# Import page modules
+
 from pages import training, household_management, waste_collection
 from pages import worker_management, vehicle_tracking, treatment_plant
 from pages import community_reporting, rewards_fines
@@ -20,10 +20,9 @@ def main():
         initial_sidebar_state="expanded"
     )
 
-    # Initialize database
+
     init_database()
 
-    # Navigation
     st.sidebar.title("♻️ Waste Management System")
 
     pages = {
@@ -41,7 +40,7 @@ def main():
     selected_page = st.sidebar.radio("Navigate to:", list(pages.keys()))
     page_key = pages[selected_page]
 
-    # Main content area
+  
     if page_key == "dashboard":
         show_dashboard()
     elif page_key == "training":
@@ -65,11 +64,9 @@ def main():
 def show_dashboard():
     st.title("🏠 Waste Management Dashboard")
 
-    # Get dashboard data
     from utils.database import get_dashboard_stats
     stats = get_dashboard_stats()
 
-    # Key metrics
     col1, col2, col3, col4 = st.columns(4)
 
     with col1:
@@ -109,7 +106,6 @@ def show_dashboard():
         else:
             st.info("No segregation data available")
 
-    # Recent alerts
     st.subheader("🚨 Recent Alerts")
     alerts = stats.get('recent_alerts', [])
     if alerts:
@@ -118,7 +114,6 @@ def show_dashboard():
     else:
         st.info("No recent alerts")
 
-    # Quick actions
     st.subheader("⚡ Quick Actions")
     col1, col2, col3 = st.columns(3)
 
@@ -140,5 +135,6 @@ def show_dashboard():
 
 if __name__ == "__main__":
     main()
+
 
 
